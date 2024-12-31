@@ -1,0 +1,251 @@
+body{
+    
+    background-color: #000;
+    color: #fff;
+    font-family: "Poppins", serif;
+    
+}
+
+.perfil{
+    gap: 400px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    justify-content: space-around;
+}
+
+.home-1{
+    margin: 0;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    
+}
+
+.home-1 li{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0033ff;
+    border: 2px solid #0033ff;
+    text-align: center;
+    border-radius: 5px;
+    list-style: none;
+    animation: animacao 10s linear infinite;
+    
+}
+
+.home-1 li:hover{
+    background-color: #0022aa;
+    border-color: #02a;
+}
+
+
+.perfil h1,
+.home-1 li {
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    background-size: 400%; 
+    animation: animacao 10s linear infinite; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+
+}
+
+@keyframes animacao{
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
+
+.apresentacao{
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    display: flex;
+    gap: 400px;
+}    
+
+.apresentacao img{
+    
+    border-radius: 600px;
+    border: 3px solid #0033ff;
+    list-style: none;
+}
+
+.apresentacao2{
+    height: 500px;
+    width: 600px;
+
+}
+
+
+.projetos a,
+.projetos p,
+.projetos h1,
+.apresentacao2 h1, 
+.apresentacao2 h2, 
+.apresentacao2 p {
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    background-size: 400%; 
+    animation: animacao2 10s linear infinite; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+
+}
+
+@keyframes animacao2{
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
+
+.apresentacao2 img{
+    display: inline-flex;
+    background-color: 0033ff;
+    text-align: center;
+    border-radius: 100px;
+}
+
+
+
+.icones {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.projeto-itens,
+.apresentacao img,
+.apresentacao2 img{
+
+    border: 2px solid #0033ff;
+    list-style: none;
+    animation: borda2RGB 5s linear infinite;
+
+}
+
+@keyframes borda2RGB {
+    0% {
+        border-color: #ff0000;
+    }
+    33% {
+        border-color: #ffff00; 
+    }
+    55% {
+        border-color: #ff00f3;
+    }
+    66% {
+        border-color: #0033ff; 
+    }
+    77% {
+        border-color: #ff00c4;
+    }
+    100% {
+        border-color: #ff0000;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 425px) {
+    .perfil{
+        gap: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        justify-content: space-around;
+    }
+    
+
+}
+
+@media screen and (max-width: 1024px) {
+    .perfil{
+        gap: 400px;
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        justify-content: space-around;
+    }
+    
+    .apresentacao{
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        display: flex;
+        gap: 100px;
+    } 
+
+}
+
+@media screen and (max-width: 768px) { 
+    .eu img{
+        width: 300px;
+        height: auto;
+        border-radius: 600px;
+        border: 3px solid #0033ff;
+        list-style: none;
+    }
+
+    .apresentacao{
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        display: flex;
+        gap: 60px;
+    } 
+
+}
+@media screen and (max-width: 425px) {
+    .home-1{
+        margin: 0;
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        
+    }
+    .perfil{
+        gap: 300px;
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        justify-content: space-around;
+    }
+    .eu img{
+        margin: 0px 150px;
+        width: 300px;
+        height: auto;
+        border-radius: 600px;
+        border: 3px solid #0033ff;
+        list-style: none;
+    }
+
+    .apresentacao{
+        margin-top: 80px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+    } 
+
+    .icones{
+        margin-left: 180px;
+        margin-top: 100px;
+        display: inline-flex;
+        gap: 20px;
+    }
+
+}
+
+
+
+
